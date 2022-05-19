@@ -1,0 +1,21 @@
+{
+    "name": "logseq-fluent-theme",
+    "author": "MrWillCom",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "sass --watch src:dist",
+        "build": "sass src:dist"
+    },
+    "logseq": {
+        "themes": [
+            {
+                "name": "Fluent Theme",
+                "url": "./dist/custom.css"
+            }
+        ],
+        "id": "logseq-fluent-theme"
+    },
+    "dependencies": {
+        "sass": "^1.51.0"
+    }
+}

@@ -1,0 +1,53 @@
+:root {
+  --ls-border-radius-low: 6px;
+}
+
+a,
+.left-sidebar-inner .nav-content-item > .header,
+.cursor,
+.cp__header a:hover {
+  cursor: default;
+}
+
+a.button,
+.left-sidebar-inner .nav-content-item > .header,
+.left-sidebar-inner .nav-content-item > .bd ul > li > a,
+.menu-link,
+.block-highlight,
+.content .selected {
+  border-radius: 6px;
+}
+
+.cp__palette-main .chosen,
+.cp__select-main .chosen {
+  border-radius: 6px !important;
+}
+
+.rounded-md {
+  border-radius: 10px;
+}
+
+.left-sidebar-inner .nav-content-item > .header {
+  padding: 4px calc(18px - 0.5rem);
+  margin: 0 0.5rem;
+}
+
+.left-sidebar-inner .nav-content-item > .bd ul {
+  margin: 0 0.5rem;
+
+  & > li > a {
+    padding: 4px 20px;
+  }
+
+  .page-icon {
+    display: none;
+  }
+}
+
+.menu-link {
+  margin: 0 4px;
+}
+
+.ui__modal-overlay div {
+  background: transparent;
+}
