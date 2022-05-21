@@ -1,6 +1,7 @@
+$borderRadiusExtraLow: 4px;
 $borderRadiusLow: var(--ls-border-radius-low);
 $borderRadiusMedium: var(--ls-border-radius-medium);
-$borderRadiusHigh: 12px;
+$borderRadiusHigh: 10px;
 
 .light-theme,
 .white-theme,
@@ -12,6 +13,8 @@ html[data-theme="light"] {
   --ls-active-primary-color: #0067c0;
   --ls-link-text-color: #003e92;
   --ls-page-checkbox-color: #0067c0;
+  --ls-menu-hover-color: #f0f0f0;
+  --ls-menu-active-color: #f2f2f2;
 }
 
 .dark-theme,
@@ -29,8 +32,8 @@ html[data-theme="dark"] {
 }
 
 :root {
-  --ls-border-radius-low: 8px;
-  --ls-border-radius-medium: 10px;
+  --ls-border-radius-low: 6px;
+  --ls-border-radius-medium: 8px;
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
   --ls-menu-hover-color: var(--ls-quaternary-background-color);
 }
@@ -89,6 +92,7 @@ a,
 
 .menu-link {
   margin: 0 4px;
+  transition: none;
 }
 
 .ui__modal-overlay div {
@@ -109,11 +113,10 @@ a,
 
 .form-checkbox,
 .form-radio {
-  border-radius: $borderRadiusLow;
+  border-radius: $borderRadiusExtraLow;
 }
 
 .bg-indigo-600 {
-  color: #000;
   background-color: var(--ls-active-primary-color);
 }
 
@@ -150,4 +153,31 @@ a.button {
 
 .block-children {
   border-color: var(--ls-quaternary-background-color);
+}
+
+.menu-link:active,
+button.menu:active,
+button.pull:active {
+  background-color: var(--ls-menu-active-color);
+}
+
+.cp__settings-inner {
+  & > aside {
+    ul > li {
+      border-radius: $borderRadiusLow;
+
+      &:hover,
+      &:focus-visible {
+        background-color: var(--ls-menu-hover-color);
+      }
+
+      &:active {
+        background-color: var(--ls-menu-active-color);
+      }
+
+      & > a {
+        padding: 6px 10px;
+      }
+    }
+  }
 }
