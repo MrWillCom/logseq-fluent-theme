@@ -8,6 +8,7 @@ $borderRadiusHigh: 10px;
 html[data-theme="light"] {
   --ls-primary-background-color: #f9f9f9;
   --ls-secondary-background-color: #f3f3f3;
+  --ls-tertiary-background-color: #eaeaea;
   --ls-quaternary-background-color: #eaeaea;
   --ls-border-color: #e5e5e5;
   --ls-active-primary-color: #0067c0;
@@ -16,6 +17,10 @@ html[data-theme="light"] {
   --ls-menu-hover-color: #f0f0f0;
   --ls-menu-active-color: #f2f2f2;
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
+  --ls-scrollbar-foreground-color: #888888;
+  --ls-scrollbar-background-color: #f5f5f5;
+  --ls-scrollbar-thumb-hover-color: var(--ls-scrollbar-foreground-color);
+  --ls-block-properties-background-color: #0067c0;
 
   --fd-button-border: #1473c5;
   --fd-button-border-bottom: #003e73;
@@ -36,6 +41,9 @@ html[data-theme="dark"] {
   --ls-page-checkbox-color: #4cc2ff;
   --ls-menu-hover-color: #2d2d2d;
   --ls-menu-active-color: #292929;
+  --ls-scrollbar-foreground-color: #a0a0a0;
+  --ls-scrollbar-background-color: #2d2d2d;
+  --ls-block-properties-background-color: #4cc2ff;
 
   --fd-button-border: #5ac7ff;
   --fd-button-border-bottom: #42a7dc;
@@ -63,7 +71,10 @@ a.button,
 .left-sidebar-inner .nav-content-item > .bd ul > li > a,
 .menu-link,
 .block-highlight,
-.content .selected {
+.content .selected,
+.datepicker td.available:hover,
+.datepicker th.available:hover,
+.datepicker td.start-date.end-date {
   border-radius: $borderRadiusLow;
 }
 
@@ -142,6 +153,8 @@ a,
   }
 }
 
+.datepicker td.active,
+.datepicker td:hover,
 .bg-indigo-600 {
   color: #fff;
   background-color: var(--ls-active-primary-color);
