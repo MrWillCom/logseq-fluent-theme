@@ -21,6 +21,7 @@ html[data-theme="light"] {
   --ls-scrollbar-background-color: #f5f5f5;
   --ls-scrollbar-thumb-hover-color: var(--ls-scrollbar-foreground-color);
   --ls-block-properties-background-color: #0067c0;
+  --ls-title-text-color: #1a1a1a;
 
   --fd-button-border: #1473c5;
   --fd-button-border-bottom: #003e73;
@@ -44,6 +45,9 @@ html[data-theme="dark"] {
   --ls-scrollbar-foreground-color: #a0a0a0;
   --ls-scrollbar-background-color: #2d2d2d;
   --ls-block-properties-background-color: #4cc2ff;
+  --ls-title-text-color: #ddd;
+  --ls-primary-text-color: #bbb;
+  --ls-active-secondary-color: #ddd;
 
   --fd-button-border: #5ac7ff;
   --fd-button-border-bottom: #42a7dc;
@@ -237,4 +241,9 @@ button.pull:active {
       }
     }
   }
+}
+
+tr:nth-child(even),
+.dark-theme tr:nth-child(even) {
+  background: none;
 }
