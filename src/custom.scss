@@ -22,6 +22,7 @@ html[data-theme="light"] {
   --ls-scrollbar-thumb-hover-color: var(--ls-scrollbar-foreground-color);
   --ls-block-properties-background-color: #0067c0;
   --ls-title-text-color: #1a1a1a;
+  --ls-block-bullet-color: #0067c0;
 
   --fd-button-border: #1473c5;
   --fd-button-border-bottom: #003e73;
@@ -48,6 +49,7 @@ html[data-theme="dark"] {
   --ls-title-text-color: #ddd;
   --ls-primary-text-color: #bbb;
   --ls-active-secondary-color: #ddd;
+  --ls-block-bullet-color: #4cc2ff;
 
   --fd-button-border: #5ac7ff;
   --fd-button-border-bottom: #42a7dc;
