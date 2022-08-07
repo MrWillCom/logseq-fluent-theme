@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "sass --watch src:dist",
         "build": "sass src:dist",
-        "min": "cleancss -O2 -o dist/custom.css dist/custom.css"
+        "min": "cleancss -o dist/custom.css dist/custom.css"
     },
     "logseq": {
         "themes": [
