@@ -237,3 +237,13 @@ tr:nth-child(even),
 .dark-theme tr:nth-child(even) {
   background: none;
 }
+
+.py-2 {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.px-4 {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
